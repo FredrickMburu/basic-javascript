@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>error handling</title>
+        <script>
+            function myFunc()
+            {
+                var a = 100;
+                try{
+                   // var s = a.toUpperCase();
+                    document.write(" the number is "+ a);
+                }
+                catch(e){
+                    alert("error");
+                }
+                finally{
+                    alert("code will be executed regardless");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            click the bitton
+        </p>
+        <input type="button" value="click me" onclick="myFunc()">
+    </body>
+</html>

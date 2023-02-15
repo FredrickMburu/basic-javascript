@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do while</title>
+</head>
+<body>
+    <script>
+        var actualpin = "1234";
+        var pin;
+        var count = 0;
+
+        do
+        {
+            pin = prompt("Enter pin", "Enter");
+            count++;
+        }while( pin != actualpin && count < 3);
+
+        if( pin == actualpin)
+        {
+            document.write("Welcome to your account");
+        }
+        else
+        {
+            document.write("account blocked");
+        }
+    </script>
+</body>
+</html>
